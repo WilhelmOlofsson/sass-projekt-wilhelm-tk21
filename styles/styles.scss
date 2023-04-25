@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./header";
+
+$primaryBtn: rgb(182, 85, 153);
+$textColor: rgb(58, 42, 42);
+
+/*Funktion*/
+@mixin Bluring($blurSize) {
+    filter: blur($blurSize);
+}
+
+
+.contact button {
+    background: $primaryBtn;
+}
+
+.container{
+    background-color: lightskyblue;
+    /* Vi kör funktionen */
+    @include Bluring(2px);
+}
+
+// 1. Skapa en mixin 2. Skapa en klass 3. Kör mixinen med @include
+
+

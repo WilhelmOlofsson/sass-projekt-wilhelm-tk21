@@ -1,0 +1,15 @@
+/* Följande är Exempel på en Generell Mixin */
+
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115vh;
+}
+
+@mixin fontproperies($color_shadow) {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: $fontSize;
+    font-weight: bold;
+    text-shadow: 2px 2px $color_shadow;
+}
